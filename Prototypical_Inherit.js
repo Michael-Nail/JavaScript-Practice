@@ -34,5 +34,5 @@ var popup2 = function() {
         this.constructor = CarBoat("Master-CarBoat"); 
     }; 
 	console.log("\"Master-CarBoat\" CarBoat instance set as constructor of CarBoat()");
-	console.log("CarBoat prototype constructor returns:" /*CarBoat.prototype.constructor*/);
+	console.log("CarBoat prototype constructor returns:" CarBoat.prototype.constructor);
 }

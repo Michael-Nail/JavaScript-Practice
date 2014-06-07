@@ -9,7 +9,12 @@ var CarBoat = function() {
 };
 
 console.log("Making sure anything prints at all.");
+print("Making sure anything prints at all.");
 
-console.log(Boat.prototype.constructor); //Should return Boat
-Boat.prototype = new CarBoat();
-console.log(Boat.prototype.constructor); //Should return CarBoat.
+var popup = function() { //behaving as expected!
+	console.log("Boat prototype constructor before switching prototype to CarBoat:");
+	console.log(Boat.prototype.constructor); //Should return Boat
+    Boat.prototype = new CarBoat();
+    console.log("And after:");
+    console.log(Boat.prototype.constructor); //Should return CarBoat.
+}
